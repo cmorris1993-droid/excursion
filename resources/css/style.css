@@ -1,0 +1,45 @@
+/* Global Reset and Typography */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Set the background to a dark green and font color to white */
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #003300; /* Darker Green Background */
+    color: white; /* Default font color is now white */
+}
+
+/* Header Styling (for the top navigation bar) */
+.header-main {
+    display: flex;
+    justify-content: space-between; /* Pushes the title and nav to opposite ends */
+    align-items: center;
+    padding: 20px 40px; /* Top/Bottom padding, Left/Right padding */
+    background-color: transparent; /* Changed to transparent for a seamless look on the dark green body */
+    color: white;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Button/Link Styling for "Download the App" */
+.btn-download {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50; /* A brighter, forest green for the button */
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #388E3C; /* Darker hover green */
+}
