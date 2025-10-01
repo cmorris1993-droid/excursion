@@ -15,11 +15,12 @@ body {
 /* Header Styling (for the top navigation bar) */
 .header-main {
     display: flex;
-    justify-content: space-between; /* Pushes the title and nav to opposite ends */
+    justify-content: center; /* Pushes the title and nav to opposite ends */
     align-items: center;
     padding: 20px 40px; /* Top/Bottom padding, Left/Right padding */
     background-color: transparent; /* Changed to transparent for a seamless look on the dark green body */
     color: white;
+    gap: 20px;
 }
 
 .site-title {
@@ -42,4 +43,21 @@ body {
 
 .btn-download:hover {
     background-color: #388E3C; /* Darker hover green */
+}
+
+main {
+    /* Center the block element (video) horizontally */
+    text-align: center;
+    padding: 20px; /* Add some space around the video */
+}
+
+main video {
+    /* Constrain video width to fit within typical screen sizes */
+    max-width: 100%; 
+    height: auto;
+    /* Ensure the video itself is treated as a block for centering */
+    display: block;
+    margin: 0 auto; 
+    border-radius: 10px; /* Optional: adds a nice rounded look to the video container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
